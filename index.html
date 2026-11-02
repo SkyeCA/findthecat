@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find the Cat</title>
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <main id="start" class="screen">
+    <h1>Find the cat</h1>
+    <button id="begin">Start</button>
+  </main>
+
+  <main id="game" class="screen" hidden>
+    <div id="frame" class="frame"></div>
+    <div class="controls">
+      <button id="give-up">Give Up</button>
+      <p id="result" hidden></p>
+      <button id="next" hidden>Next</button>
+    </div>
+  </main>
+
+  <main id="score" class="screen" hidden>
+    <h1>Cat Finder Results</h1>
+    <div class="tally">
+      <div class="lived"><strong id="lived-count"></strong>Lived</div>
+      <div class="died"><strong id="died-count"></strong>Died</div>
+    </div>
+    <p id="median"></p>
+    <p id="verdict"></p>
+    <button id="again">Play Again</button>
+    <a id="link" href="https://findthecat.github.io">https://findthecat.github.io</a>
+  </main>
+
+  <script src="boxes.js?v=4"></script>
+  <script src="game.js?v=3"></script>
+</body>
+</html>
